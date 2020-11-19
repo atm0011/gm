@@ -48,23 +48,27 @@
             display: flex;
     flex-direction: column;
     position: absolute;
-            /* background-color: red; */
-
         }
+        /* width: 80px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top:100px; */
      
-     
-        .loadingTop{
+        /* .loadingTop{
+         
+
+            margin-top:10px;
+        } */
+        .loadingTopBox{
             width: 100%;
             height: 100px;
-         
-         
-            /* background: red; */
-            /* flex-direction: column;
-            justify-content: center; */
-            /* align-items: center; */
             position: absolute;
-
-            /* margin-top:10px; */
+        }
+        .loadingTop{
+            width: 100%;
+            height: 40px;
+            margin: 0 auto;
+     
         }
         .circuit{
         
@@ -172,21 +176,25 @@
          <canvas id="canvas1" >
               
         </canvas>
+       
         <div class="middleBox">
-            <div class="loadingTop">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class=" loadingTopBox">
+                <div class="loadingTop">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
+            
             <div class=" 
             circuit   rainbow-text animated" data-splitting>为您选择最优线路，请稍后...</div>
             <div class="btnBox"> <div id="btn"><img src="./btn.png" alt=""></div></div>
            
             <div class="timeBox" ><span id="time" ></span><span >秒后进入网站</span></div>
         </div>
-        <script type="text/javascript">  
+        <!-- <script type="text/javascript">  
             var k=3;  
             function changeTime(){
            document.getElementById("time").innerHTML=k;   
@@ -202,7 +210,7 @@
         window.setInterval("autoRedirect()",3000);
         
         </script>
-     
+      -->
     </div>
     <script src='js/splitting.min.js'></script>
 <script src="js/script.js"></script>

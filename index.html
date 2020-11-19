@@ -39,16 +39,25 @@
             height: 100vh;
             flex-direction: column;
             justify-content: center;
-            /* align-items: center; */
+            align-items: center;
           
+        }
+        .middleBox{
+            width: 100%;
+            height: 400px;
+            display: flex;
+    flex-direction: column;
+    position: absolute;
+            /* background-color: red; */
+
         }
      
      
         .loadingTop{
-            width: 80px;
-            height: 40px;
-            margin: 0 auto;
-            margin-top: -220px;
+            width: 100%;
+            height: 100px;
+         
+         
             /* background: red; */
             /* flex-direction: column;
             justify-content: center; */
@@ -58,25 +67,44 @@
             /* margin-top:10px; */
         }
         .circuit{
-            /* margin-top: -100px; */
+        
+            width: 100%;
+            height: 100px;
+            margin-top: 100px;
             position: absolute;
             font-size: 45px;
         }
-
+         .btnBox{
+            width: 100%;
+            margin-top: 200px;
+         }
         #btn{
+         
             width: 400px;
+            height: 100px;
+            /* margin-top: 200px; */
             /* top: 525px; */
-            margin-top: 220px;
+           margin: auto;
+        }
+        .timeBox{
+         
+    margin-top: 300px;
+            width: 100%;
+            height: 100px;
+            color: white;
+            font-size: 22px;
+            text-align: center;
+            line-height: 100px;
             position: absolute;
         }
-        #time{
+        /* #time{
             width: 400px;
             margin-top: 400px;
             color: white;
             font-size: 22px;
             text-align: center;
             position: absolute;
-        }
+        } */
         .loadingTop span{
             display: inline-block;
             width: 8px;
@@ -130,6 +158,7 @@
         }
         #btn img{
             width: 100%;
+            height: 100%;
           
         }
         
@@ -139,21 +168,24 @@
 <body>
     <div class="box">
         <!-- <canvas id="canvas" ></canvas>  -->
-        <div class="loadingTop">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+       
          <canvas id="canvas1" >
               
         </canvas>
-        
-        <div class=" 
-        circuit   rainbow-text animated" data-splitting>为您选择最优线路，请稍后...</div>
-        <div id="btn"><img src="./btn.png" alt=""></div>
-        <div id="time"></div>
+        <div class="middleBox">
+            <div class="loadingTop">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class=" 
+            circuit   rainbow-text animated" data-splitting>为您选择最优线路，请稍后...</div>
+            <div class="btnBox"> <div id="btn"><img src="./btn.png" alt=""></div></div>
+           
+            <div class="timeBox" ><span id="time" ></span><span >秒后进入网站</span></div>
+        </div>
         <script type="text/javascript">  
             var k=3;  
             function changeTime(){
